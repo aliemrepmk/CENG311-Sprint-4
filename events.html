@@ -1,0 +1,68 @@
+<!--  
+    This is the events page of our website. Users can check out the past and upcoming events from here. 
+    It will contain a calendar to show upcoming events and a link to archive of the past events. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="jQuery-plugins/jquery-ui-1.13.3.custom/jquery-ui.css">
+        <link rel="stylesheet" href="jQuery-plugins/animated-calendar-event-gc/dist/calendar-gc.min.css"/>
+
+        <script src="jQuery-plugins/jquery-ui-1.13.3.custom/external/jquery/jquery.js"></script>
+        <script src="jQuery-plugins/jquery-ui-1.13.3.custom/jquery-ui.js"></script>
+        <script src="jQuery-plugins/animated-calendar-event-gc/dist/calendar-gc.min.js"></script>
+        <script src="events.js"></script>
+        
+        <title>Events</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo-container">
+                    <div class="club-info">
+                        <img src="assets/logos/logo.jpg" alt="Our logo">
+                        <div class="club-title" style="cursor: pointer;"><h1>AYBU Hiking Club</h1></div>
+                    </div>
+                    <div class="aybu-logo">
+                        <img src="assets/logos/aybu.jpg" alt="AYBU logo">
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html"class="active">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <section>
+                    <h2>Upcoming Events</h2><br>
+                    <div id="calendar"></div>
+                    <br><br><br>
+                    
+                    <h2>Past Events</h2><br>
+                    <p>Click <a href="http://event.ybu.edu.tr/kulup/aybuddsk#etkinlikler">here</a> to check our past events.<br></p>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 AYBU Hiking Club. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+/* Styles for the About Us page */
+
+.container {
+    width: calc(100% - 100px); /* 150px padding on both sides */
+    margin: 0 auto;
+    padding: 0 150px; /* Ensures content is 150px from left and right */
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+section h3 {
+    margin-bottom: 20px;
+    text-align: center; /* Align header text to the center */
+}
+
+section p {
+    line-height: 1.6;
+    text-align: left; /* Align paragraph text to the left */
+}
+
+/* Hero content styles */
+.hero-content {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: left;
+    color: #fff;
+    transition: transform 1s ease;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h2 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* Logo container styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo-container .club-info {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.club-info img {
+    margin-left: 20px;
+}
+
+/* Members grid styles */
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.member {
+    position: relative;
+    cursor: pointer;
+    width: 150px; /* Fixed width for uniformity */
+}
+
+.member img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.member .role {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#modalImg {
+    max-width: 300px;
+    max-height: 300px;
+    /* Add any additional styling you want for the modal image */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section h3 {
+    text-align: center;
+}

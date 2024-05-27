@@ -1,0 +1,64 @@
+/* We used a separate css file for the gallery page for being able to design and style grid more easily and effectively */
+
+/* styling to the gallery */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.gallery-item video {
+    width: 300px;
+    height: 300px;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+.gallery-item{
+    position: inherit;
+    position: relative;
+    -ms-layout-grid-mode: both;
+    
+} 
+
+.gallery-item .play-button {
+    position: absolute;
+    top: -800%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item .play-button:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}

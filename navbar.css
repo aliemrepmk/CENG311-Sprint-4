@@ -1,0 +1,45 @@
+/* We used a separate css file for the navbar because it will be shown on the all pages with thhe same attributes and settings.*/
+
+/* styling to the navigation bar */
+nav {
+    background-color: #FFFCF6;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li a.active {
+    color:#D06247;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+nav ul li a {
+    color: grey;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #c3ba12;
+}
+
+nav ul li a:hover {
+    background-color: #FFFCF6;
+    color:#D06247;
+}

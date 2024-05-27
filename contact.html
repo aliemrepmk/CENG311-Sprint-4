@@ -1,0 +1,94 @@
+<!--  
+    This is the contact page of our website.
+    It will contain links to social media accounts of the club. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="contact.css">  <!-- Added a separate css file to manage social links effectively. -->
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/css/intlTelInput.css">
+       
+        <script src="contact.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@22.0.2/build/js/intlTelInput.min.js"></script>
+
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo-container">
+                    <div class="club-info">
+                        <img src="assets/logos/logo.jpg" alt="Our logo">
+                        <div class="club-title" style="cursor: pointer;"><h1>AYBU Hiking Club</h1></div>
+                    </div>
+                    <div class="aybu-logo">
+                        <img src="assets/logos/aybu.jpg" alt="AYBU logo">
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html" class="active">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <section>
+                    <form class="input_form" name="formValidation" id="myForm">
+                        <div class="inner_container">
+                            <div class="input_row">
+                                <input type="text" name="firstname"required placeholder="First Name *">
+                                <input type="text" name="lastname" placeholder="Last Name *" required>
+                                <input type="email" name="email" placeholder="Email *" required>
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+        
+                        <div class="input-row-message">
+                            <textarea id="message-box" placeholder="Message" required>Message</textarea>
+                            <button class="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div class="container">
+                <section>
+                    <h3>You can contact us from our social media links:</h3>
+                    <div class="social-media-container">
+                        <ul>
+                            <li><a href="https://www.instagram.com/aybudagcilik"><img src="assets/logos/instagram.jpg" alt="Instagram"></a></li>
+                            <li><a href="https://www.facebook.com/Aybuddsk/"><img src="assets/logos/facebook.jpg" alt="Facebook"></a></li>
+                            <li><a href="ybudsk@gmail.com"><img src="assets/logos/mail.jpg" alt="Mail Adress"></a></li>
+                            <li><a href="http://event.ybu.edu.tr/kulup/aybuddsk"><img src="assets/logos/web.jpg" alt="Webpage"></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <br><br><br>
+
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.6824020690965!2d32.81592107582017!3d39.97085298265663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34c029ec9701b%3A0xfb0b0a3bf440a10a!2zQW5rYXJhIFnEsWxkxLFyxLFtIEJleWF6xLF0IMOcbml2ZXJzaXRlc2kgMTUgVGVtbXV6IMWeZWhpdGxlcmkgWWVybGXFn2tlc2k!5e0!3m2!1str!2str!4v1711552470342!5m2!1str!2str" width="1250" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 AYBU Hiking Club. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

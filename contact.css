@@ -1,0 +1,110 @@
+/* We used a separate css file for the social media container */
+
+/* styling to the social media container */
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-media-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-media-container li {
+    margin-right: 25px; /* Added space between logos */
+}
+
+.social-media-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-media-container a:hover {
+    color: #007bff;
+}
+
+.social-media-container a img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.google-map{
+    background-color: #FFFCF6;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: row;
+    width:900px;
+    margin: 0 auto;
+    column-gap: 60px;
+    margin-bottom: 100px;
+}
+
+.input_form > div {
+    flex-grow: 1;
+}
+
+.input_row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.input_row input[type="text"],
+.input_row input[type="tel"],
+.input_row input[type="email"]{
+    background-color: #FFFCF6;
+    padding: 18px;
+    border-width: 1px;
+}
+
+.input-row-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.inner_container{
+    display: block;
+    flex-direction: column;
+    background-color: #FFFCF6;
+}
+#message-box{
+    height: 200px;
+    resize: none;
+    background-color: #FFFCF6;
+    border-width: 2px;
+    display: flex;
+    flex: 5.5;
+}
+.submit-button {
+    width: 140px;
+    display: block;
+    flex: 1;
+    align-self: flex-end;
+    background-color: #13261A;
+    color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #FFFCF6;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #FFFCF6; /* blue background on hover */
+    color: black; /* white text color on hover */
+    border: 2px solid black; /* Add a black border on hover */
+  }
